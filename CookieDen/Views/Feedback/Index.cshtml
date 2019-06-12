@@ -1,0 +1,25 @@
+﻿@model CookieDen.Models.Feedback
+
+<form asp-action="Index" method="post" role="form">
+    <div class="form-group">
+        <table>
+            <tr>
+                <td><label class="col-form-label" asp-for="Name">Name</label></td>
+                <td><input asp-for="Name" class="form-control" id="Name" name="Name" value="" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="col-form-label" asp-for="EmailId">Email</label>
+                </td>
+                <td>   <input asp-for="EmailId" class="form-control" id="Email" name="Email" value="" /></td>
+            </tr>
+            <tr>
+                <td><label class="col-form-label" asp-for="Name">Comment</label></td>
+                <td><textarea asp-for="Content" class="form-control" id="Content" name="Content"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" class="btn btn-primary" value="Feedback" id="Feedback" name="Feedback" /></td>
+            </tr>
+        </table>
+    </div>
+</form>
